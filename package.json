@@ -1,0 +1,15 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "my portfolio ",
+  "main": "index.js",
+  "scripts": {
+    "tailwind": "npx tailwindcss -i ./src/input.css ./build/style/style.css --watch",
+    "start": "serve build"
+  },
+  "author": "badr-eddin",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^3.4.14"
+  }
+}
