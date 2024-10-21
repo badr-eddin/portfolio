@@ -1,3 +1,77 @@
+:root {
+    --bg-color: 31, 41, 55;
+    --text-color: 243, 244, 246;
+    --card-bg: 55, 65, 81;
+    --card-border: 75, 85, 99;
+    --button-bg: 55, 65, 81;
+    --button-text: 243, 244, 246;
+    --skill-bg: 75, 85, 99;
+    --code-keyword: 224, 108, 117;
+    --code-quote: 229, 192, 123;
+    --icons: 59, 130, 246;
+}
+
+#dark-theme {
+    --bg-color: 24, 26, 30;
+    --text-color: 243, 244, 246;
+    --card-bg: 40, 44, 52;
+    --card-border: 50, 54, 62;
+    --button-bg: 55, 65, 81;
+    --button-text: 243, 244, 246;
+    --skill-bg: 36,41,46;
+    --code-keyword: 224, 108, 117;
+    --code-quote: 229, 192, 123;
+    --icons: 59, 130, 246;
+}
+
+#light-theme {
+    --bg-color: 31, 41, 55;
+    --text-color: 243, 244, 246;
+    --card-bg: 55, 65, 81;
+    --card-border: 75, 85, 99;
+    --button-bg: 55, 65, 81;
+    --button-text: 243, 244, 246;
+    --skill-bg: 75, 85, 99;
+    --code-keyword: 224, 108, 117;
+    --code-quote: 229, 192, 123;
+    --icons: 59, 130, 246;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.scroll {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none;
+}
+
+.skills-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.skill-card {
+    background-color: rgb(var(--card-bg));
+    border: 1px solid rgb(var(--card-border));
+    border-radius: 0.2rem;
+    padding: 1rem;
+    transition: transform 0.3s;
+}
+
+.skill-card li {
+    background-color: rgb(var(--skill-bg));
+    border-radius: 1rem;
+    padding: 0.25rem 1rem;
+    margin: 0.25rem 0;
+    display: inline-block;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

@@ -3,226 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John Doe - Full Stack Developer & Security Specialist</title>
-    <style>
-        /* Reset and base styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            color: #e0e0e0;
-            background-color: #121212;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-            padding: 0 20px;
-        }
-
-        /* Header */
-        header {
-            background: #1a1a1a;
-            padding: 1rem 0;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1;
-        }
-        header .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        header h1 {
-            color: #bb86fc;
-        }
-        nav ul {
-            display: flex;
-            list-style: none;
-        }
-        nav ul li {
-            padding: 0 10px;
-        }
-        nav ul li a {
-            color: #e0e0e0;
-            text-decoration: none;
-        }
-        nav ul li a:hover {
-            color: #bb86fc;
-        }
-
-        /* Main content */
-        main {
-            padding-top: 80px;
-        }
-        section {
-            padding: 40px 0;
-        }
-        h2 {
-            color: #bb86fc;
-            margin-bottom: 20px;
-        }
-
-        /* About section */
-        #about p {
-            font-size: 1.1em;
-            margin-bottom: 20px;
-        }
-
-        /* Skills section */
-        #skills ul {
-            display: flex;
-            flex-wrap: wrap;
-            list-style: none;
-            gap: 10px;
-        }
-        #skills li {
-            background: #1f1f1f;
-            color: #e0e0e0;
-            padding: 10px 15px;
-            border-radius: 5px;
-            font-size: 0.9em;
-        }
-
-        /* Projects section */
-        #projects .project {
-            background: #1f1f1f;
-            margin-bottom: 20px;
-            padding: 20px;
-            border-radius: 5px;
-        }
-        #projects .project h3 {
-            color: #03dac6;
-            margin-bottom: 10px;
-        }
-
-        /* Contact section */
-        #contact form {
-            display: flex;
-            flex-direction: column;
-        }
-        #contact form input,
-        #contact form textarea {
-            margin-bottom: 10px;
-            padding: 10px;
-            border: none;
-            border-radius: 5px;
-            background: #1f1f1f;
-            color: #e0e0e0;
-        }
-        #contact form button {
-            padding: 10px;
-            border: none;
-            border-radius: 5px;
-            background: #bb86fc;
-            color: #121212;
-            cursor: pointer;
-            font-size: 1em;
-        }
-        #contact form button:hover {
-            background: #03dac6;
-        }
-
-        /* Footer */
-        footer {
-            background: #1a1a1a;
-            color: #e0e0e0;
-            text-align: center;
-            padding: 1rem 0;
-            margin-top: 20px;
-        }
-    </style>
+    <title>Badr Fadel - Full Stack Developer & Security Specialist</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
-<body>
-    <header>
-        <div class="container">
-            <h1>John Doe</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+<body class="bg-background p-0 transition-[background,color] duration-500" id="dark-theme">
+    <section class="scroll max-h-[100vh] p-4">
+        <header class="sticky top-0 w-full p-2">
+            <div class="full flex justify-end">
+                <button class="rounded-[50%] border-0 bg-button-bg text-foreground cursor-pointer theme-switch p-2" aria-label="Toggle dark mode" onclick="toggleTheme()">
+                    <i class="size-4 w-5 h-5" data-lucide="sun"></i>
+                </button>
+            </div>
+        </header>
+
+        <main class="justify-center justify-items-center">
+            <!-- Main View -->
+            <section class="h-[90vh] flex flex-col justify-center justify-items-center">
+                <span class="flex justify-around w-full h-height">
+                    <span class="flex gap-3 justify-between">
+                        <span class="text-foreground/30 my-auto">&lt;<span class="text-code-keyword">h1</span>&gt;</span>
+                        <h1 class="text-[3rem] text-foreground font-bold">Badr Fadel</h1>
+                        <span class="text-foreground/30 my-auto">&lt;/<span class="text-code-keyword">h1</span>&gt;</span>
+                    </span>
+                </span>
+                <p class="text-foreground/50 text-center">Full-stack developer with a passion for creating efficient and innovative solutions.</p>
+                <ul class="flex gap-4 justify-center my-[2%]">
+                    <li><i class="text-icons cursor-pointer " data-lucide="instagram"></i></li>
+                    <li><i class="text-icons cursor-pointer " data-lucide="linkedin"></i></li>
+                    <li><i class="text-icons cursor-pointer " data-lucide="github"></i></li>
                 </ul>
-            </nav>
-        </div>
-    </header>
+            </section>
 
-    <main class="container">
-        <section id="about">
-            <h2>About Me</h2>
-            <p>
-                I'm a versatile Full Stack Developer and Security Specialist with a passion for creating secure, efficient, and innovative solutions. With expertise ranging from low-level assembly to high-level web technologies, I bring a comprehensive understanding of the entire technology stack to every project.
-            </p>
-        </section>
+            <!-- Skills -->
+            <section>
+                <div class="full flex gap-2 justify-between">
+                    <span class="bg-card-bg p-2 pt-[0.6rem] text-foreground/70 font-mono rounded-sm w-[20%] flex gap-2">
+                        <span class="text-code-keyword">#include</span>
+                        <span class="text-code-quote">"skills.hpp"</span> 
+                    </span>
+                    <span class="h-[2px] rounded sm bg-card-border my-auto block w-[100%]" />
+                </div>
 
-        <section id="skills">
-            <h2>Skills & Technologies</h2>
-            <ul>
-                <li>C++</li>
-                <li>CSS3</li>
-                <li>HTML5</li>
-                <li>JavaScript</li>
-                <li>Markdown</li>
-                <li>Python</li>
-                <li>Shell Script</li>
-                <li>YAML</li>
-                <li>Express.js</li>
-                <li>jQuery</li>
-                <li>NPM</li>
-                <li>NodeJS</li>
-                <li>Nodemon</li>
-                <li>Qt</li>
-                <li>React</li>
-                <li>React Router</li>
-                <li>SASS</li>
-                <li>TailwindCSS</li>
-                <li>Git</li>
-                <li>GitHub</li>
-                <li>CMake</li>
-                <li>Docker</li>
-                <li>XFCE</li>
-                <li>TOR</li>
-                <li>Assembly</li>
-            </ul>
-        </section>
+                <div class="grid skills-grid p-5 text-foreground/60">
+                    <div class="skill-card h-card">
+                        <div class="pb-5 flex gap-2">
+                            <i data-lucide="braces" class="text-icons" ></i>
+                            <h2 class="text-foreground/95">Languages</h2>
+                        </div>
+                        <ul>
+                            <li>C++</li>
+                            <li>JavaScript</li>
+                            <li>Python</li>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>Markdown</li>
+                            <li>Shell Script </li>
+                        </ul>
+                    </div>
+                    <div class="skill-card h-card">
+                        <div class="pb-5 flex gap-2">
+                            <i data-lucide="code" class="text-icons" ></i>
+                            <h2 class="text-foreground/95">Frameworks & Libraries</h2>
+                        </div>
+                        <ul>
+                            <li>React</li>
+                            <li>Express.js</li>
+                            <li>jQuery</li>
+                            <li>React Router</li>
+                            <li>SASS</li>
+                            <li>TailwindCSS</li>
+                            <li>Python Qt</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card h-card">
+                        <div class="pb-5 flex gap-2">
+                            <i data-lucide="frame" class="text-icons" ></i>
+                            <h2 class="text-foreground/95">Tools & Platforms</h2>
+                        </div>
+                        <ul>
+                            <li>Git</li>
+                            <li>GitHub</li>
+                            <li>NPM</li>
+                            <li>NodeJs</li>
+                            <li>Nodemon</li>
+                            <li>CMake</li>
+                            <li>Docker</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card h-card">
+                        <div class="pb-5 flex gap-2">
+                            <i data-lucide="ellipsis" class="text-icons" ></i>
+                            <h2 class="text-foreground/95">Other</h2>
+                        </div>
+                        <ul>
+                            <li>Qt</li>
+                            <li>XFCE</li>
+                            <li>TOR</li>
+                            <li>YAML</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
 
-        <section id="projects">
-            <h2>Featured Projects</h2>
-            <div class="project">
-                <h3>Secure Communication Platform</h3>
-                <p>Developed an end-to-end encrypted messaging system using C++ and Qt, with a focus on privacy and security.</p>
-            </div>
-            <div class="project">
-                <h3>Full Stack Web Application</h3>
-                <p>Created a responsive web app using React, Express.js, and Node.js, styled with SASS and TailwindCSS.</p>
-            </div>
-            <div class="project">
-                <h3>System-Level Security Tool</h3>
-                <p>Implemented a low-level security analysis tool using Assembly and C++, capable of detecting and preventing certain types of exploits.</p>
-            </div>
-        </section>
+            <!-- Projects -->
+            <section>
+                <div class="full flex gap-2 justify-between">
+                    <span class="bg-card-bg p-2 pt-[0.6rem] text-foreground/70 font-mono rounded-sm w-[20%] flex gap-2">
+                        <span class="text-foreground/50">section</span>
+                        <span class="text-code-keyword">.projects</span> 
+                    </span>
+                    <span class="h-[2px] rounded sm bg-card-border my-auto block w-[100%]" />
+                </div>
+            </section>
 
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <form>
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
-    </main>
+        </main>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2023 John Doe. All rights reserved.</p>
-        </div>
-    </footer>
+    </section>
+
+    <script src="lib/js/index.js"></script>
 </body>
 </html>
