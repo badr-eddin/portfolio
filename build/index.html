@@ -6,8 +6,17 @@
     <title>Badr Fadel - Full Stack Developer & Security Specialist</title>
     <link rel="stylesheet" href="style/style.css">
     <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
 </head>
 <body class="bg-background p-0 transition-[background,color] duration-500" id="dark-theme">
+    <canvas id="circuitCanvas"></canvas>
     <section class="scroll max-h-[100vh] p-4">
         <header class="sticky top-0 w-full p-2">
             <div class="full flex justify-end">
@@ -19,21 +28,32 @@
 
         <main class="justify-center justify-items-center">
             <!-- Main View -->
-            <section class="h-[90vh] flex flex-col justify-center justify-items-center">
+             <div class="h-[91vh] flex flex-col justify-center justify-items-center">
+              <section class="flex flex-col backdrop-blur-[4px] rounded-lg max-w-[60%] m-auto">
                 <span class="flex justify-around w-full h-height">
                     <span class="flex gap-3 justify-between">
                         <span class="text-foreground/30 my-auto">&lt;<span class="text-code-keyword">h1</span>&gt;</span>
-                        <h1 class="text-[3rem] text-foreground font-bold">Badr Fadel</h1>
+                        <h1 class="text-[3rem] text-foreground font-semibold">Hallo, Ich bin <span class="text-special">Badr Fadel</span></h1>
                         <span class="text-foreground/30 my-auto">&lt;/<span class="text-code-keyword">h1</span>&gt;</span>
                     </span>
                 </span>
-                <p class="text-foreground/50 text-center">Full-stack developer with a passion for creating efficient and innovative solutions.</p>
+                <span class="flex justify-center justify-items-center">
+                  <p class="text-foreground/50 text-center max-w-[80%] text-pretty">
+                    Full-stack developer with a passion for creating efficient and innovative solutions.
+                    Full-stack developer with a passion for creating efficient and innovative solutions.
+                    Full-stack developer with a passion for creating efficient and innovative solutions.
+                    Full-stack developer with a passion for creating efficient and innovative solutions.
+                  </p>
+                </span>
+                
                 <ul class="flex gap-4 justify-center my-[2%]">
                     <li><i class="text-icons cursor-pointer " data-lucide="instagram"></i></li>
                     <li><i class="text-icons cursor-pointer " data-lucide="linkedin"></i></li>
                     <li><i class="text-icons cursor-pointer " data-lucide="github"></i></li>
                 </ul>
             </section>
+             </div>
+            
 
             <!-- Skills -->
             <section>
@@ -42,7 +62,7 @@
                         <span class="text-code-keyword">#include</span>
                         <span class="text-code-quote">"skills.hpp"</span> 
                     </span>
-                    <span class="h-[2px] rounded sm bg-card-border my-auto block w-[100%]" />
+                    <span class="h-[2px] rounded sm bg-lines my-auto block w-[100%]" />
                 </div>
 
                 <div class="grid skills-grid p-5 text-foreground/60">
@@ -113,10 +133,9 @@
                         <span class="text-foreground/50">section</span>
                         <span class="text-code-keyword">.projects</span> 
                     </span>
-                    <span class="h-[2px] rounded sm bg-card-border my-auto block w-[100%]" />
+                    <span class="h-[2px] rounded sm bg-lines my-auto block w-[100%]" />
                 </div>
             </section>
-
         </main>
 
     </section>
