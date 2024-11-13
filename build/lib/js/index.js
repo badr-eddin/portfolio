@@ -8,8 +8,8 @@ const ctx = canvas.getContext('2d');
 
 function toggleTheme() {
     const themeSwitch = document.querySelector(".theme-switch")
-
     if (document.body.id.startsWith("dark")) {
+
         document.body.id = "light-theme"
         themeSwitch.setAttribute('data-lucide', 'moon')
         color = lightColor
@@ -46,7 +46,7 @@ function drawCircuitBoard() {
     ctx.fillStyle = color;
     ctx.lineWidth = 2;
 
-    const numLines = Math.floor((canvas.width * canvas.height) / (gridSize * gridSize * 4));
+    const numLines = Math.floor((canvas.width * canvas.height) / (gridSize * gridSize)) / 10;
 
     for (let i = 0; i < numLines; i++) {
         let x = Math.floor(Math.random() * grid[0].length);

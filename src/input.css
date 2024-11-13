@@ -14,7 +14,7 @@
 }
 
 #dark-theme {
-    --bg-color: 24, 26, 30;
+    --bg-color: 9, 11, 14;
     --text-color: 243, 244, 246;
     --card-bg: 40, 44, 52;
     --card-border: 50, 54, 62;
@@ -89,6 +89,28 @@ h1, h1 span {
   height: 100%;
   z-index: -1;
   opacity: .9;
+}
+
+.green-glow-text {
+    text-shadow: 0 0 10px rgba(21, 128, 61, 0.8), 
+                    0 0 20px rgba(21, 128, 61, 0.6),
+                    0 0 30px rgba(21, 128, 61, 0.4);
+}
+
+.blink {
+    animation: blink steps(1) infinite 1.5s;
+}
+
+@keyframes blink{
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 @tailwind base;
